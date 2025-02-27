@@ -1,11 +1,12 @@
 import { useRef, useState, useEffect } from 'react';
 import { PhaserGame } from './game/PhaserGame';
-import { FaExpand, FaCompress, FaVolumeMute, FaVolumeUp } from "react-icons/fa";
+import { FaExpand, FaCompress, FaVolumeMute, FaVolumeUp, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 function App() {
     const phaserRef = useRef();
     const [isMuted, setIsMuted] = useState(() => localStorage.getItem("isMuted") === "true");
     const [isFullscreen, setIsFullscreen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         localStorage.setItem("isMuted", String(isMuted));
@@ -39,6 +40,10 @@ function App() {
             setIsFullscreen(false);
         }
     }
+    
+    const toggleMenu = () => {
+        setIsMenuOpen((prev) => !prev);
+    };
 
     // ESC 또는 F11로 전체화면이 꺼지는 경우 감지
     useEffect(() => {
@@ -64,7 +69,17 @@ function App() {
 
     return (
         <div id="app" className="relative">
-            <div className="m-4 absolute right-0 top-0 items-center">
+            <button
+                onClick={toggleMenu}
+                className="absolute top-4 right-0 z-50 bg-gray-600 text-white h-7 px-1 rounded-l-lg
+                           hover:bg-gray-500 transition duration-300"
+            >
+                {isMenuOpen ? <FaChevronRight size={16} /> : <FaChevronLeft size={16} />}
+            </button>
+            <div
+                className={`absolute top-4 right-0 flex items-center transition-transform duration-300
+                ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`} // 🔥 숨김/보임 애니메이션
+            >
                 <div className="flex flex-row gap-4">
                 <button
                     className="rounded-full bg-gray-500 w-7 h-7 flex items-center justify-center
@@ -80,6 +95,7 @@ function App() {
                 >
                     {isFullscreen ? <FaCompress size={20} /> : <FaExpand size={20} />}
                 </button>
+                <div className='w-5'></div>
                 </div>
             </div>
             <PhaserGame ref={phaserRef} />
