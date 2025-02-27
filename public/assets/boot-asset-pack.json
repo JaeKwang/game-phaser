@@ -1,0 +1,86 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/battle_button.png",
+                "type": "image",
+                "key": "battle_button"
+            },
+            {
+                "url": "assets/bestwallet.png",
+                "type": "image",
+                "key": "bestwallet"
+            },
+            {
+                "url": "assets/blofin.png",
+                "type": "image",
+                "key": "blofin"
+            },
+            {
+                "url": "assets/card_button.png",
+                "type": "image",
+                "key": "card_button"
+            },
+            {
+                "url": "assets/coinbase.png",
+                "type": "image",
+                "key": "coinbase"
+            },
+            {
+                "url": "assets/gestlogin.png",
+                "type": "image",
+                "key": "gestlogin"
+            },
+            {
+                "url": "assets/left_margin.png",
+                "type": "image",
+                "key": "left_margin"
+            },
+            {
+                "url": "assets/lobby_bg.png",
+                "type": "image",
+                "key": "lobby_bg"
+            },
+            {
+                "url": "assets/login_bg.png",
+                "type": "image",
+                "key": "login_bg"
+            },
+            {
+                "url": [
+                    "assets/audio/login_bgm.mp3"
+                ],
+                "type": "audio",
+                "key": "login_bgm"
+            },
+            {
+                "url": "assets/margex.png",
+                "type": "image",
+                "key": "margex"
+            },
+            {
+                "url": "assets/metamask.png",
+                "type": "image",
+                "key": "metamask"
+            },
+            {
+                "url": "assets/rifty.png",
+                "type": "image",
+                "key": "rifty"
+            },
+            {
+                "url": "assets/right_margin.png",
+                "type": "image",
+                "key": "right_margin"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false,
+        "visible": true
+    }
+}

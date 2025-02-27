@@ -1,0 +1,104 @@
+{
+    "id": "35ca3adb-67d6-4c80-9843-4a128a4f00ff",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Login",
+        "borderWidth": 1280,
+        "borderHeight": 720
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "45a1faa9-2c0d-4502-b6bf-65dfa7692947",
+            "label": "login_bg",
+            "texture": {
+                "key": "login_bg"
+            },
+            "x": 639,
+            "y": 362,
+            "scaleX": 0.36752881916878155,
+            "scaleY": 0.36752881916878155
+        },
+        {
+            "type": "Image",
+            "id": "066ad6b7-bc3c-460a-b9a2-d6eadfacd5f8",
+            "label": "bestwallet",
+            "texture": {
+                "key": "bestwallet"
+            },
+            "x": 640,
+            "y": 530,
+            "scaleX": 0.7606962621056914,
+            "scaleY": 0.7606962621056914
+        },
+        {
+            "type": "Image",
+            "id": "49f72ec2-7112-41d8-842b-3532332f5f2a",
+            "label": "blofin",
+            "texture": {
+                "key": "blofin"
+            },
+            "x": 640,
+            "y": 420,
+            "scaleX": 0.7606962621056914,
+            "scaleY": 0.7606962621056914
+        },
+        {
+            "type": "Image",
+            "id": "13d1f559-3b2c-4f1c-9f22-1b3fbda26342",
+            "label": "coinbase",
+            "texture": {
+                "key": "coinbase"
+            },
+            "x": 640,
+            "y": 200,
+            "scaleX": 0.7606962621056914,
+            "scaleY": 0.7606962621056914
+        },
+        {
+            "type": "Image",
+            "id": "9743a96e-c3ae-4a17-9245-1f860a1cfe0e",
+            "label": "gestlogin",
+            "texture": {
+                "key": "gestlogin"
+            },
+            "x": 640,
+            "y": 640,
+            "scaleX": 0.7606962621056914,
+            "scaleY": 0.7606962621056914
+        },
+        {
+            "type": "Image",
+            "id": "e4aa7848-4065-48c9-b957-3deac1d46267",
+            "label": "margex",
+            "texture": {
+                "key": "margex"
+            },
+            "x": 640,
+            "y": 310,
+            "scaleX": 0.7606962621056914,
+            "scaleY": 0.7606962621056914
+        },
+        {
+            "type": "Image",
+            "id": "0ed8c8af-8d38-43b7-8756-1c5a24238f56",
+            "label": "metamask",
+            "texture": {
+                "key": "metamask"
+            },
+            "x": 640,
+            "y": 90,
+            "scaleX": 0.7606962621056914,
+            "scaleY": 0.7606962621056914
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}
