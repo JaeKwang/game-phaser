@@ -2,6 +2,36 @@
     "section1": {
         "files": [
             {
+                "url": "assets/background.png",
+                "type": "image",
+                "key": "background"
+            },
+            {
+                "url": "assets/background0.png",
+                "type": "image",
+                "key": "background0"
+            },
+            {
+                "url": "assets/background1.png",
+                "type": "image",
+                "key": "background1"
+            },
+            {
+                "url": "assets/background2.png",
+                "type": "image",
+                "key": "background2"
+            },
+            {
+                "url": "assets/background3.png",
+                "type": "image",
+                "key": "background3"
+            },
+            {
+                "url": "assets/background4.png",
+                "type": "image",
+                "key": "background4"
+            },
+            {
                 "url": "assets/battle_button.png",
                 "type": "image",
                 "key": "battle_button"
@@ -20,6 +50,41 @@
                 "url": "assets/card_button.png",
                 "type": "image",
                 "key": "card_button"
+            },
+            {
+                "url": "assets/cardback.png",
+                "type": "image",
+                "key": "cardback"
+            },
+            {
+                "url": "assets/cardcontent.png",
+                "type": "image",
+                "key": "cardcontent"
+            },
+            {
+                "url": "assets/cardframe_1.png",
+                "type": "image",
+                "key": "cardframe_1"
+            },
+            {
+                "url": "assets/cardskill_1.png",
+                "type": "image",
+                "key": "cardskill_1"
+            },
+            {
+                "url": "assets/cardtitle_1.png",
+                "type": "image",
+                "key": "cardtitle_1"
+            },
+            {
+                "url": "assets/close.png",
+                "type": "image",
+                "key": "close"
+            },
+            {
+                "url": "assets/close_hover.png",
+                "type": "image",
+                "key": "close_hover"
             },
             {
                 "url": "assets/coinbase.png",
@@ -72,6 +137,16 @@
                 "url": "assets/right_margin.png",
                 "type": "image",
                 "key": "right_margin"
+            },
+            {
+                "url": "assets/simple_bar.png",
+                "type": "image",
+                "key": "simple_bar"
+            },
+            {
+                "url": "assets/star.png",
+                "type": "image",
+                "key": "star"
             }
         ]
     },

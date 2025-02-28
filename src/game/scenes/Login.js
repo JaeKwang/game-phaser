@@ -1,7 +1,4 @@
-
-// You can write more code here
-
-/* START OF COMPILED CODE */
+import { getCardList } from '../utils/web3';
 
 export default class Login extends Phaser.Scene {
 	
@@ -88,10 +85,14 @@ export default class Login extends Phaser.Scene {
 		this.editorCreate();
 	}
 
-	startGuestLogin() {
-        console.log("Guest Login 진행 중...");
-        // 🔹 로그인 처리 로직 추가 (예: API 요청, 씬 전환 등)
-        this.scene.start("Loading"); // 로그인 후 MainMenu 씬으로 이동 (예제)
+	async startGuestLogin() {
+		try {
+			const userDecks = await getCardList();
+			this.registry.set("userDecks", userDecks);
+			this.scene.start("Loading");
+		} catch (error){
+			console.error(error);
+		}
     }
 }
 

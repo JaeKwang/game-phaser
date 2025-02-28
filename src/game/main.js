@@ -2,6 +2,7 @@ import Boot from './scenes/Boot';
 import Login from './scenes/Login';
 import Loading from './scenes/Loading';
 import Main from './scenes/Main';
+import Mydeck from './scenes/Mydeck';
 
 // Find out more information about the Game Config at:
 // https://newdocs.phaser.io/docs/3.70.0/Phaser.Types.Core.GameConfig
@@ -15,7 +16,8 @@ const config = {
         Boot,
         Login,
         Loading,
-        Main
+        Main,
+        Mydeck
     ],
     scale: {
         mode: Phaser.Scale.FIT,  // 창 크기에 맞게 자동 조정

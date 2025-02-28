@@ -1,26 +1,44 @@
 {
-  "id": "1b2ea820-4e42-4bcb-8cd1-359aaa25b351",
-  "settings": {
-    "compilerOutputLanguage": "JAVA_SCRIPT",
-    "javaScriptInitFieldsInConstructor": false,
-    "javaScriptGenerateFieldDeclarations": true,
-    "exportClass": false,
-    "autoImport": false,
-    "importFileExtension": false,
-    "createMethodName": "editorCreate",
-    "compilerInsertSpaces": false,
-    "compilerTabSize": 4,
-    "borderWidth": 1280,
-    "borderHeight": 720,
-    "borderX": 0,
-    "borderY": 0,
-    "sceneKey": "Main"
-  },
-  "sceneType": "SCENE",
-  "displayList": [],
-  "meta": {
-    "app": "Phaser Editor 2D - Scene Editor",
-    "url": "https://phasereditor2d.com",
-    "contentType": "phasereditor2d.core.scene.SceneContentType"
-  }
+    "id": "1b2ea820-4e42-4bcb-8cd1-359aaa25b351",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Main",
+        "borderWidth": 1280,
+        "borderHeight": 720
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "8d203c30-ecdc-4b98-a46a-db0aa660d1f7",
+            "label": "lobby_bg",
+            "texture": {
+                "key": "lobby_bg"
+            },
+            "x": 641,
+            "y": 361,
+            "scaleX": 0.7737560154262262,
+            "scaleY": 0.7737560154262262
+        },
+        {
+            "type": "Image",
+            "id": "7e37caee-f71a-4281-9ee3-9717c3e1723d",
+            "label": "card_button",
+            "texture": {
+                "key": "card_button"
+            },
+            "x": 660,
+            "y": 553,
+            "scaleX": 2.0470160929258334,
+            "scaleY": 2.0470160929258334
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
 }

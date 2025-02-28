@@ -1,0 +1,68 @@
+{
+    "id": "a940bf78-8419-458f-8a89-5ff1941a7574",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Mydeck",
+        "borderWidth": 1280,
+        "borderHeight": 720
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "bdfe0200-23a1-489c-8d2c-60598a633ce8",
+            "label": "background",
+            "texture": {
+                "key": "background"
+            },
+            "x": 640,
+            "y": 362,
+            "scaleX": 1.7378593953254595,
+            "scaleY": 1.7378593953254595
+        },
+        {
+            "type": "Image",
+            "id": "e52fe433-7d87-49e5-80e2-7b77bced847c",
+            "label": "simple_bar",
+            "texture": {
+                "key": "simple_bar"
+            },
+            "x": 640,
+            "y": 41,
+            "scaleX": 1.7176920955532815,
+            "scaleY": 1.7176920955532815
+        },
+        {
+            "type": "Image",
+            "id": "eb3613f1-9884-4aa5-acda-67acadac8481",
+            "label": "close",
+            "texture": {
+                "key": "close"
+            },
+            "x": 1232,
+            "y": 33,
+            "scaleX": 0.7519938856818941,
+            "scaleY": 0.7519938856818941
+        },
+        {
+            "type": "Image",
+            "id": "46d3bccc-ffa9-4979-9eb3-8d3c10fc79ac",
+            "label": "close_hover",
+            "texture": {
+                "key": "close_hover"
+            },
+            "x": 1232,
+            "y": 33,
+            "scaleX": 0.7485008446172448,
+            "scaleY": 0.7485008446172448
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

@@ -28,8 +28,36 @@ export default class Loading extends Phaser.Scene {
 		this.load.image("card_button", "/assets/card_button.png");
 
 		// 🔹 카드 덱 화면
+		const userDecks = this.registry.get("userDecks") || [];
+		userDecks.map((v) => this.load.image(`card${v.card_id}`, v.image));
 		this.load.image("left_margin", "/assets/left_margin.png");
-		this.load.image("right_margin", "/assets/right_margin.png")
+		this.load.image("right_margin", "/assets/right_margin.png");
+
+		this.load.image("background", "/assets/background.png");
+		this.load.image("close", "/assets/close.png");
+		this.load.image("close_hover", "/assets/close_hover.png");
+		this.load.image("simple_bar", "/assets/simple_bar.png");
+
+		// 🔹 카드 구성
+		this.load.image("background0", "/assets/background0.png");
+		this.load.image("background1", "/assets/background1.png");
+		this.load.image("background2", "/assets/background2.png");
+		this.load.image("background3", "/assets/background3.png");
+		this.load.image("background4", "/assets/background4.png");
+
+		this.load.image("border0", "/assets/border0.png");
+		this.load.image("border1", "/assets/border1.png");
+		this.load.image("border2", "/assets/border2.png");
+		this.load.image("border3", "/assets/border3.png");
+		this.load.image("border4", "/assets/border4.png");
+		
+		this.load.image("star", "/assets/star.png");
+
+		this.load.image("cardcontent", "/assets/cardcontent.png");
+		this.load.image("cardback", "/assets/cardback.png");
+		this.load.image("cardframe_1", "/assets/cardframe_1.png");
+		this.load.image("cardtitle_1", "/assets/cardtitle_1.png");
+		this.load.image("cardskill_1", "/assets/cardskill_1.png");
 	}
 
 	/** @returns {void} */
@@ -68,6 +96,6 @@ export default class Loading extends Phaser.Scene {
 
 	onLoadComplete() {
 		this.sound.removeAll();
-		this.scene.start("Main");
+		this.scene.start("Mydeck");
 	}
 }
