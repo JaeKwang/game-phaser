@@ -16,7 +16,7 @@ export default class CardThumbnail extends Phaser.GameObjects.Container {
         this.add(this.attrBorder);
 
         // ⭐ 카드 랭크
-        for(var i = 0; i < this.card.rank; i++) {
+        for(var i = this.card.rank - 1; i >= 0; i--) {
             const star = this.scene.add.image(-40 + i*10, -40, `star`);
             star.setDisplaySize(20, 20);
             this.add(star);

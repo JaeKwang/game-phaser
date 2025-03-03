@@ -55,6 +55,7 @@ export default class CardContainer extends Phaser.GameObjects.Container {
             if (b.rank !== a.rank) return (b.rank - a.rank) * sortFactor;  // 1️⃣ 등급 정렬
             if (b.level !== a.level) return (b.level - a.level) * sortFactor; // 2️⃣ 레벨 정렬
             if (b.attribute !== a.attribute) return a.attribute - b.attribute;
+            if (b.card_id !== a.card_id) return a.card_id - b.card_id;
         });
 
         this.totalCards = this.userDecks.length;

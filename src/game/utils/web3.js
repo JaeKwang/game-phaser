@@ -26,8 +26,10 @@ async function getCardList() {
         const nftData = await Promise.all(
             nfts.map(async (id) => {
                 const nft = await contract.getNFT(id);
+                const name = await contract.getCardName(nft[0], 'kr');
                 return {
                     id: Number(id),
+                    name: String(name),
                     card_id: Number(nft[0]),
                     level: Number(nft[1]),
                     rank: Number(nft[2]),

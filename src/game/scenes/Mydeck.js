@@ -56,6 +56,9 @@ export default class Mydeck extends Phaser.Scene {
 	create() {
 		this.events.on("mydeck-selected", (cardData) => {
 			this.selectCard = cardData;
+			if (this.card) { 
+				this.card.setCardData(this.selectCard); // ✅ this.card가 있을 때만 실행
+			}
 		});
 
 		this.editorCreate();
